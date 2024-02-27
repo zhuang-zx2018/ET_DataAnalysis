@@ -1,0 +1,25 @@
+server:
+  port: 9998
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: dataAnalysis
+  mail:
+    host: smtphz.qiye.163.com
+    username: gactest@cihon.cn
+    tousername: yankang.nie@cihon.cn
+    #    tousername: gurx@gacne.com.cn
+    password: LxdbggUqrt6fNSbW
+    properties:
+      mail:
+        smtp:
+          auth: true
+          port: 25
+          starttls:
+            enable: true
+            required: true
+    default-encoding: UTF-8
+logback:
+  # 配置日志的路径位置，  windows环境下是磁盘根目录，Linux是需要授权的
+  path: /logs/dataAnalysis
